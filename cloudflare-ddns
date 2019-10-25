@@ -181,7 +181,7 @@ def main():
             return
         auth = {'X-Auth-Email': config['email'], 'X-Auth-Key': config['api_key']}
         external_ip = get_external_ip()
-        ipv6 = get_ipv6()
+##        ipv6 = get_ipv6()
         for domain in config['domains']:
             update_dns(domain, auth, external_ip, ipv6)
     else:
